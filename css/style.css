@@ -1,0 +1,281 @@
+/*configuraciónes básicas*/
+body, html{margin: 0; padding: 0;}
+a,ul,li{
+	list-style-type: none;
+	text-decoration: none;
+	text-decoration-style: none;
+}
+h1{
+	color: white;
+}
+h4{
+	clear: both;
+}
+footer{
+	width: 80%;
+	float: right;
+	text-align: center;
+	padding: 0;
+	background-color: #AA9F9F;
+}
+/*Span en este caso son los iconos*/
+span{
+	color:white;
+}
+.container{ width: 100%; }
+/*Sección de la derecha| Main*/
+.rigthside{
+	width: 80%;
+	background-color:#F28022;
+	float: right;
+}
+.landing{
+	width: 100%;
+	height: 600px;
+	background-image: url('../images/fondo.jpg');
+	background-attachment: fixed;
+}
+#title{
+	font-size: 100px;
+	color: white;
+	text-align: center;
+	text-shadow: 10px 20px 10px #847D7D;
+	margin: 0 auto;
+	vertical-align: center;
+	line-height: 600px;
+	letter-spacing: 30px;
+}
+.Intro{
+	text-align: center;
+	width: 100%;
+}
+.paragraph{
+	padding: 10px 80px 10px 80px;
+	text-align: left;
+}
+.show{
+	background-image: url('../images/re.jpg');
+	background-attachment: fixed;
+	width: 100%;
+	height: 200px;
+}
+.show p{
+	padding: 60px 250px 0px 80px;
+	margin: 0;
+	color: white;
+	text-shadow: -1px 1px #8C8C8C;
+}
+#profile{
+	border-radius: 20%;
+	height: 120px;
+	width: 120px;
+	border: 1px solid pink;
+	float: right;
+	margin:40px;
+}
+
+.habilities{
+	width: 100%;
+	border: 1px solid white;
+	height: 600px;
+
+}
+.habilities h2{
+	margin: 20px;
+
+}
+.habilities ul{
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+.habilities ul li{
+	float: left;
+	width: 15%;
+	margin-left: 2%;
+	text-align: center; 
+	height: 130px;
+	border-radius: 50%;
+	margin: 25px;
+}
+.habilities ul li p{
+	font-size: 20px;
+	margin: 5px;
+	color: white;
+}
+
+.square{
+	width: 130px;
+	height: 130px;	
+	border-radius: 50%;
+	opacity: 0.4;
+	float: left;
+	margin:25px;
+	color: white;
+	text-align: center;
+}
+.square:hover{
+	opacity: 1;
+}
+
+
+/*Menu de la izquierda junto con sus elementos*/
+.leftside{
+	width:20%;
+	background-color: #807C04;
+	float: left;
+	position: fixed;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.menu-kid{
+	width: 100%;
+	background-color: #7083FB;
+	border:#767BE1;
+	text-align: center;	
+	height: 40px;
+	text-shadow: 0px 1px #888686;
+	padding-top:25px;
+	color: white;
+}
+.menu-kid:hover{
+	background-color: #B92939;
+	text-shadow: 0px 0px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+.menu-kid ul{
+	width: 100%;
+	color:black;
+}
+#menu{
+	width:100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	padding-top: 160px;
+}
+.menu-bottom{
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+	display: none;
+	box-shadow: 0px 4px 2px #BBBBBB;
+	border-radius: 50%;
+}
+.menu-extend{
+	margin: 20px;
+
+	display: none;
+}
+
+/*Botones del menú*/
+.cross{
+	height: 20px;
+	width: 20px;
+	float: right;
+	margin: 10px;
+	box-shadow: 0px 3px 2px #9B9393;
+	border-radius: 5px;
+}
+.cross:hover{
+	opacity: 0.6;
+	box-shadow: 0px 0px 0px;
+}
+/*Fin de los botones del menú*/
+/* Styles for the dropdown achordeon menu*/
+.unico{
+	width: 100%;
+	background-color: #FB9070;
+	text-align: center;	
+	height: 200px;
+	text-shadow: 0px 1px #888686;
+	padding-top:25px;
+	color: white;
+}
+.display{
+	display: block;
+}
+
+/*Fin del leftside*/
+.full-width{
+	width: 100%;
+}
+
+
+/* Efectos y estilos para las secciones de habilidad*/
+.habilitie-show{
+
+	width: 100%;
+	background-position: center;
+
+	padding: 0;
+	margin: 0;
+	clear: both;
+
+}
+
+.html{
+	background-image: url('../images/html.png');
+	background-position: center;
+ }
+.css{
+	background-image: url('../images/css.jpg');
+	background-position: center;
+}
+.jquery{
+		background-image: url('../images/jquery.png');
+background-position: center;
+}
+.bootstrap{
+		background-image: url('../images/bootstrap.png');
+		background-position: center;
+}
+.js{
+		background-image: url('../images/js.png');
+		background-position: center;
+}
+
+
+.mate{
+	height: 300px;
+	float: left;
+	width: 40%;
+
+}
+.mate p{
+	padding: 50px;
+	color: white;
+}
+.maindiv{
+	width: 20%;
+	float: left;
+	height: 300px;
+	text-align: center;
+
+
+}
+figure{
+	padding-top: 200px;
+	font-size: 20px;
+	letter-spacing: 6px;
+
+}
+.socialicon{
+	border: 2px solid white;	
+	border-radius: 50%;
+	padding: 10px;
+	margin: 30px 5px 5px 5px;
+	font-size: 18px;
+
+}
+.socialmedia{
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+	height: 200px;
+}
