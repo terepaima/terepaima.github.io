@@ -67,14 +67,16 @@ const Hero = () => {
 }
 
 function Rig() {
-    return useFrame((state, delta) => {
+    useFrame((state, delta) => {
         easing.damp3(
             state.camera.position,
             [state.mouse.x, 1 + state.mouse.y, 3],
-            0.5, 
+            0.5,
             delta
         )
-    });
+    })
+
+    return null
 }
 
 export default Hero
