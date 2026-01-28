@@ -1,0 +1,62 @@
+import { useState } from "react";
+import { motion } from "motion/react";
+function Navigation() {
+    const scrollTo = (e) => {
+        e.preventDefault();
+        const id = e.currentTarget.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    return (
+        <ul className="nav-ul pr-5">
+            <li className="nav-li">
+                <a className="nav-lnk" href="#home" onClick={e => scrollTo(e)}>Home</a>
+            </li>
+            <li className="nav-li">
+                <a className="nav-lnk"  href="#about" onClick={e => scrollTo(e)}>About</a>
+            </li>
+            <li className="nav-li">
+                <a className="nav-lnk"  href="#work" onClick={e => scrollTo(e)}>Work</a>
+            </li>
+            {/* <li className="nav-li">
+                <a className="nav-lnk"  href="#contact" onClick={e => scrollTo(e)}>Contact</a>
+            </li> */}
+        </ul>
+    )
+}
+
+const Navbar = () => {
+    const [isOpen, setIsOpen ] =  useState(false);
+    return (
+        <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
+            <div className="flex items-center  justify-between py-2 sm:py-0">
+                <a  href="/" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white ml-5">
+                    Web solutions 
+                </a>
+                <button 
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
+                    style={{width: "50px"}}
+                >
+                    <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} className="w-66 h-6" alt="toggle"/>
+                </button>
+                <nav className="hidden sm:flex">
+                    <Navigation />
+                </nav>
+            </div>
+            {isOpen && (
+                <motion.div className="block overflow-hidden text-center sm:hidden" initial={{opacity: 0, x:-10}}
+                animate={{opacity: 1, x: 0}}
+                style={{maxHeight: "100vh"}}
+                transition={{ duration: 1}}>
+                    <nav className="pb-5">
+                        <Navigation />
+                    </nav>
+                </motion.div>
+            )}
+        </div>
+    )
+}
+
+export default Navbar;
