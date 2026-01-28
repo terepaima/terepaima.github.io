@@ -2,7 +2,7 @@ import { FlipWords } from './FlipWords'
 import {motion} from "motion/react"
 
 const HeroText = () => {
-    const words = ["Secure,", "Modern", "Scalable"];
+    const words = ["high-performance", "data-intensive", "Secure,", "Modern", "Scalable"];
     const variants = {
         hidden: {opacity: 0, x: -50},
         visible: {opacity: 1, x: 0}
@@ -17,7 +17,7 @@ const HeroText = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 1 }}
-            >Hi, I'm Isaac</motion.h1>
+            >Senior Frontend Engineer</motion.h1>
             <div className='flex flex-col items-start'>
                 <motion.p
                     className='text-5xl font-medium text-neutral-300'
@@ -25,14 +25,14 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.2 }}>
-                    A developer < br/> Dedicated to crafting
+                    Dedicated to crafting
                 </motion.p>
                 <motion.div
                     variants={variants}
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.5 }}>
-                    <FlipWords words={words} className="font-black text-white text-8xl" />
+                    <FlipWords words={words} className="font-black text-white text-7xl" />
                 </motion.div>
                 <motion.p
                     className='text-4xl font-medium text-neutral-300'
@@ -40,7 +40,16 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.8 }}>
-                    Web Solutions
+                    Web Applications
+                </motion.p>
+                <motion.p
+                    className='text-2xl font-medium text-teal-300 mt-2.5'
+                    variants={variants}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ delay: 1.8 }}>
+                    Specialized in React & TypeScript<br />
+                    systems for real-time dashboards,<br />analytics platforms and complex enterprise SPAs.
                 </motion.p>
             </div>
         </div>
@@ -59,13 +68,13 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.2 }}>
-                    A developer < br/> Dedicating to crafting
+                    Senior Frontend Engineer
                 </motion.p>
                 <motion.p className='text-5xl font-black text-neutral-300'
                     variants={variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{ delay: 1.2 }}>Building</motion.p>
+                    transition={{ delay: 1.2 }}>Dedicated to crafting</motion.p>
                 <motion.div 
                     variants={variants}
                     initial="hidden"
@@ -79,6 +88,16 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.8 }}>Web Applications</motion.p>
+
+                    <motion.p
+                    className='text-2xl font-medium text-teal-300 mt-2.5'
+                    variants={variants}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ delay: 1.8 }}>
+                    Specialized in React & TypeScript<br />
+                    systems for real-time dashboards,<br />analytics platforms and complex enterprise SPAs.
+                </motion.p>
             </motion.div>
         </div>
     </div>

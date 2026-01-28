@@ -241,6 +241,7 @@ export const experiences = [
     title: "Frontend Developer",
     job: "Altair",
     date: "April 2024 – October 2025",
+    punch: "IoT monitoring platform used to visualize real-time device data and operational metrics.",
     contents: [
       "Built a library of 15+ reusable React components for IoT dashboards, reducing frontend development time for new features by 20%.",
       "Implemented MQTT protocol integration to enable real-time data acquisition and live-updates for device monitoring.",
@@ -253,6 +254,7 @@ export const experiences = [
     title: "Frontend Developer",
     job: "BBVA",
     date: "December 2019 – March 2024",
+    punch: "Enterprise financial systems supporting internal banking operations and mission-critical workflows.",
     contents: [
       "Promoted to Front-end Team Lead (2 years): Led MVP planning, coordinated with cross-functional teams, and enforced company-wide development standards.",
       "Led the migration of legacy web apps to Lit-element, reducing the overall bundle size and architecting optimized web components to reduce development time.",
@@ -265,6 +267,7 @@ export const experiences = [
     title: "IT Specialist",
     job: "Ecus Educational",
     date: "March 2019 – December 2019",
+    punch: "Maintain Educational Institution's IT infrastructure and website.",
     contents: [
       "Management, maintenance, and improvement of the WordPress website.",
       "SEO optimization to improve organic visibility.",
@@ -275,9 +278,10 @@ export const experiences = [
     title: "Frontend Developer",
     job: "Freelancer",
     date: "February 2017 – July 2018",
+    punch: "Where everything  begins.",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "First steps as a Frontend Developer.",
+      "Participation in small projects and collaborations on Upwork.",
     ],
   },
 ];

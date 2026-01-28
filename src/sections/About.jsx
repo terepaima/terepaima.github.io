@@ -18,7 +18,7 @@ const About = () => {
                 />
                 <div className="z-10">
                     <p className="headtext">Hi, I'm Isaac</p>
-                    <p className="subtext">Mid-Senior Frontend Engineer | <TextHighlighter action="underline" color="#fc9fff">React & Next.js</TextHighlighter> | Building scalable, high-performance web products | 7+ years experience</p>
+                    <p className="subtext">Senior Frontend Engineer | <TextHighlighter action="underline" color="#fc9fff">React & Next.js</TextHighlighter> | Building scalable, high-performance web products | 7+ years experience</p>
                 </div>
                 <div className="aboe inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"/>
             </div>
@@ -40,10 +40,10 @@ const About = () => {
             </div>
             {/* grid 3 */}
             <div className="grid-black-color grid-3">
-                <div className="z-10 w-[50%]">
+                <div className="z-10 w-[40%]">
                     <p className="headtext">Time Zone</p>
                     <p className="subtext">
-                        I'm based in <TextHighlighter action="underline" color="#fc9fff">Madrid</TextHighlighter>, open to remote work worldwide
+                        I'm based in <TextHighlighter action="underline" color="#fc9fff">Madrid (EU)</TextHighlighter> experienced working with distributed teams across Europe and international clients. Open to remote roles in EU, UK, and US time zones.
                     </p>
                 </div>
                 <figure className="absolute left-[30%] top-[10%]">
@@ -64,7 +64,7 @@ const About = () => {
             {/* grid 5 */}
             <div className="grid-default-color grid-5">
                 <div className="z-10 w-[50%]">
-                    <p className="headText">Tech Stack</p>
+                    <p className="headText">Technical Focus</p>
                     <p className="subtext"> I specialize in a variaty of languages, Frameworks, and tools that allow me to build robust and scallable applications!</p>
                 </div>
                 <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

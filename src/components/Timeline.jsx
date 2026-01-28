@@ -47,6 +47,7 @@ export const Timeline = ({ data }) => {
                 <h3>{item.date}</h3>
                 <h3>{item.job}</h3>
               </div>
+              <h4 className="text-3xl pb-3">{item.punch}</h4>
               {item.contents.map((content, index) => (
                 <p className="mb-3 font-normal text-neutral-400" key={index}>
                   {content}
